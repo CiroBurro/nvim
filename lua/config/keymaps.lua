@@ -2,6 +2,7 @@
 vim.g.mapleader = " "
 vim.keymap.set({ "n", "v" }, "<Leader>y", '"+y', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader>q', ':q<CR>', {})
+vim.keymap.set('n', '<leader>w', ':w<CR>', {})
 vim.keymap.set('n', '<leader>wq', ':wq<CR>', {})
 vim.keymap.set('n', ';', ':', { desc = 'CMD enter command mode'})
 
@@ -14,3 +15,5 @@ vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>', {}) -- apri neotree
 vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {}) -- formatta il testo
 
 vim.keymap.set('n', '<leader>gp', ':Gitsigns preview_hunk<CR>', {}) -- gitsigns preview dei cambiamenti
+
+vim.keymap.set('n', '<leader>ct', ':Codeium Chat<CR>', {})
