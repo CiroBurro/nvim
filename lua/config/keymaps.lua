@@ -16,4 +16,6 @@ vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {}) -- formatta il testo
 
 vim.keymap.set('n', '<leader>gp', ':Gitsigns preview_hunk<CR>', {}) -- gitsigns preview dei cambiamenti
 
-vim.keymap.set('n', '<leader>ct', ':Codeium Chat<CR>', {})
+vim.keymap.set('n', '<leader>ct', ':Codeium Chat<CR>', {}) -- codeium apre la chat
+
+vim.keymap.set('n', ':', '<cmd>FineCmdline<CR>', {noremap = true}) -- cmdline inserisci comando
