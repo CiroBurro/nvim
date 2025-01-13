@@ -14,7 +14,7 @@ vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>', {}) -- apri neotree
 
 vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {}) -- formatta il testo
 
-vim.keymap.set('n', '<leader>gp', ':Gitsigns preview_hunk<CR>', {}) -- gitsigns preview dei cambiamenti
+vim.keymap.set('n', '<leader>gp', ':Gitsigns preview_hunk_inline<CR>', {}) -- gitsigns preview dei cambiamenti
 
 vim.keymap.set('n', '<leader>ct', ':Codeium Chat<CR>', {}) -- codeium apre la chat
 
