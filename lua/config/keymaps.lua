@@ -9,6 +9,7 @@ vim.keymap.set('n', ';', ':', { desc = 'CMD enter command mode'})
 -- KEYMAPS PER I PLUGIN
 vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>', {}) -- telescope cerca file
 vim.keymap.set('n', '<leader>fg', ':Telescope live_grep<CR>', {}) -- telescope cerca contenuto
+vim.keymap.set('n', '<leader>fb', ':Telescope buffers<CR>', {}) -- telescope cerca contenuto
 
 vim.keymap.set('n', '<C-n>', ':Neotree toggle<CR>', {}) -- apri neotree
 

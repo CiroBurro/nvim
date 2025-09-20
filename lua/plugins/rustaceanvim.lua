@@ -3,8 +3,8 @@ return {
   version = '^5', -- Recommended
   lazy = false, -- This plugin is already lazy
 	["rust-analyzer"] = {
-	cargo = {
-			allFeatures = true,
-		}
+		cargo = { allFeatures = true },
+		check = { command = "clippy" },
+		checkOnSave = true,
 	}
 }

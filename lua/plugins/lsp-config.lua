@@ -2,27 +2,18 @@ return {
   "neovim/nvim-lspconfig",
   config = function()
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
-    local lspconfig = require "lspconfig"
-    lspconfig.lua_ls.setup {
-      capabilities = capabilities,
-    }
-    lspconfig.rust_analyzer.setup {
-      capabilities = capabilities,
-    }
-    lspconfig.ast_grep.setup {
-      capabilities = capabilities,
-    }
-    lspconfig.clangd.setup {
-      capabilities = capabilities,
-    }
-    lspconfig.cssls.setup {
-      capabilities = capabilities,
-    }
-    lspconfig.html.setup {
-      capabilities = capabilities,
-    }
-    lspconfig.pylsp.setup {
-      capabilities = capabilities,
-    }
-  end,
+		-- Rimuovi la riga deprecata
+		-- local lspconfig = require "lspconfig"
+
+		-- Usa vim.lsp.config come funzione, passando il nome del server e la configurazione
+		vim.lsp.config("lua_ls", {
+		  capabilities = capabilities,
+		})
+	  vim.lsp.config("clangd", {
+		  capabilities = capabilities,
+		})
+		vim.lsp.config("pylsp", {
+			capabilities = capabilities,
+		})
+	end,
 }
