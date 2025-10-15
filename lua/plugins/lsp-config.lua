@@ -15,5 +15,8 @@ return {
 		vim.lsp.config("pylsp", {
 			capabilities = capabilities,
 		})
+		vim.lsp.config("marksman", {
+		  capabilities = capabilities,
+		})
 	end,
 }
