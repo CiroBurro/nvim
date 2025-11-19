@@ -14,7 +14,7 @@ return {
     },
     config = function()
       require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd", "ruff", "rust_analyzer", "gopls", "jedi-language-server" },
+				ensure_installed = { "lua_ls", "clangd", "ruff", "rust_analyzer", "gopls", "jedi_language_server" },
       	automatic_enable = true,
 			})
     end,
